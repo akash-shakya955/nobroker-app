@@ -11,6 +11,9 @@ app.use(express.json());
 import userRoutes from "./src/routes/userRoutes.js";
 app.use("/api/users", userRoutes);
 
+import propertyRoutes from "./src/routes/propertyRoutes.js";
+app.use("/api/properties", propertyRoutes);
+
 // Example route
 app.get("/", (req, res) => {
   res.send("NoBroker backend running!");
